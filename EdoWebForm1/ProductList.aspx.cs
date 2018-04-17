@@ -6,9 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace EdoWebForm1 {
-    public partial class Contact : Page {
+    public partial class _ProductList : Page {
         protected void Page_Load(object sender,EventArgs e) {
-
+            
         }
     }
 }
