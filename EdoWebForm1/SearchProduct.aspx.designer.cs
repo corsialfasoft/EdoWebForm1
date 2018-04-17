@@ -11,5 +11,23 @@ namespace EdoWebForm1 {
     
     
     public partial class _SearchProduct {
+        
+        /// <summary>
+        /// Controllo prod.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox prod;
+        
+        /// <summary>
+        /// Controllo descr.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox descr;
     }
 }

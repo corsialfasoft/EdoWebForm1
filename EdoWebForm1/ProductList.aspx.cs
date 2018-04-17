@@ -10,5 +10,9 @@ namespace EdoWebForm1 {
         protected void Page_Load(object sender,EventArgs e) {
             
         }
+
+        protected void DettaglioProdotto(object sender,EventArgs e) {
+            
+        }
     }
 }

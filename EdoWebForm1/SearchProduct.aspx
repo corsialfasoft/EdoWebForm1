@@ -9,7 +9,7 @@
             <label>Codice:</label>
         </div>
         <div class="col-md-3">
-           <asp:textbox runat="server"></asp:textbox>
+           <asp:textbox ID="prod" runat="server"></asp:textbox>
         </div>
     </div>
     <div class="row">
@@ -17,7 +17,7 @@
             <label>Descrizione:</label>
         </div>
         <div class="col-md-3">
-            <asp:textbox runat="server"></asp:textbox>
+            <asp:textbox ID="descr" runat="server"></asp:textbox>
         </div>
     </div>
     <br />

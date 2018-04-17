@@ -4,12 +4,13 @@
     <h2><%: Title %>:</h2>
     <div class="container"/>
     <ul class="list-group">
-        <!--qua ci va il foreach-->
+        <%foreach(){%>
             <li class="list-group-item">
                 <span class="badge">
-                    <!--badge-->
+                    <asp:Button OnClick="DettaglioProdotto" runat="server" Text="Dettaglio >>"/>
                 </span>
                 <!--nome e descrizione-->
             </li>
+        <%} %>
     </ul>
 </asp:Content>
