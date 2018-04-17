@@ -3,7 +3,6 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
     <h3>Cerca il tuo prodotto</h3>
-    <!--qua ci va la form-->
     <div class="row">
         <div class="col-md-2">
             <label>Codice:</label>

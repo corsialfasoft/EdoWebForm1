@@ -5,15 +5,19 @@ using System.Web;
 
 namespace EdoWebForm1 {
     public class DAO {
-        Prodotto prod1 = new Prodotto("bullone 3mm", 50);
-        Prodotto prod2 = new Prodotto("bullone 5mm",50);
-        Prodotto prod3 = new Prodotto("bullone 7mm",50);
-        Prodotto prod4 = new Prodotto("staffa L",50);
-        Prodotto prod5 = new Prodotto("staffa U",50);
-        Prodotto prod6 = new Prodotto("staffa T",50);
-        Prodotto prod7 = new Prodotto("viti autofilettanti", 50);
-        Prodotto prod8 = new Prodotto("viti testa piatta", 50);
-        Prodotto prod9 = new Prodotto("viti intaglio croce", 250);
+        public static List<Prodotto> CreaProdotti () {
+            List<Prodotto> result = new List<Prodotto>();
+            result.Add(new Prodotto(1, "bullone 3mm", 50));
+            result.Add(new Prodotto(2, "bullone 5mm", 50));
+            result.Add(new Prodotto(3, "bullone 7mm", 50));
+            result.Add(new Prodotto(4, "staffa L", 50));
+            result.Add(new Prodotto(5, "staffa U", 50));
+            result.Add(new Prodotto(6, "staffa T", 50));
+            result.Add(new Prodotto(7, "viti autofilettanti", 50));
+            result.Add(new Prodotto(8, "viti a testa piatta", 50));
+            result.Add(new Prodotto(9, "viti con intaglio croce", 50));
+            return result;
+        }
     }
 
     public class Prodotto {
