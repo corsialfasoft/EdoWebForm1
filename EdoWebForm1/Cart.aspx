@@ -3,21 +3,31 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
     <h3>Ecco il tuo carrello della spesa</h3>
-    <div class="container"/>
-    <div class="row">
-        <div class="col-md-2">
-            <strong>Codice Prodotto:</strong>
-        </div>
-        <div class="col-md-2">
-            <strong>Descrizione:</strong>
-        </div>
-        <div class="col-md-2">
-            <strong>Quantita:</strong>
-        </div>
+    <br />
+    <div class="text-warning">
+        <%=Message %>
+        <br />
     </div>
-    <!--qua ci va il foreach-->
+    <%if(prodotti!=null){
+        foreach(var p in prodotti){ %>
+            <div class="container"/>
+            <div class="row">
+                <div class="col-md-2">
+                    <strong>Codice Prodotto:</strong>
+                    <%=p.Id%>
+                </div>
+                <div class="col-md-2">
+                    <strong>Descrizione:</strong>
+                    <%=p.Nome%>
+                </div>
+                <div class="col-md-2">
+                    <strong>Quantita:</strong>
+                    <%=p.QuantitaRichiesta%>
+                </div>
+            </div>
+      <%}
+      } %>
     <br />
     <asp:Button class="btn btn-primary" OnClick="Invia" runat="server" text="Invia"></asp:Button>
-    <asp:Button class="btn btn-primary" OnClick="Pulisci" runat="server" text="Pulisci"></asp:Button>
     <a class="btn btn-primary" runat="server" href="~/SearchProduct">Annulla</a>
 </asp:Content>

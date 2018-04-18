@@ -2,15 +2,13 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>:</h2>
+    <br />
     <div class="container"/>
-    <ul class="list-group">
-        <%foreach(){%>
-            <li class="list-group-item">
-                <span class="badge">
-                    <asp:Button OnClick="DettaglioProdotto" runat="server" Text="Dettaglio >>"/>
-                </span>
-                <!--nome e descrizione-->
-            </li>
-        <%} %>
-    </ul>
+    <div class="table" style="margin-top:25px">
+        <asp:Table ID="Table1" runat="server" width="100%"
+            CellPadding="10"
+            GridLines="None"
+            HorizontalAlign="Center">
+        </asp:Table>
+    </div>
 </asp:Content>

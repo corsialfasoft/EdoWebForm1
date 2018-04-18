@@ -13,21 +13,21 @@ namespace EdoWebForm1 {
     public partial class _SearchProduct {
         
         /// <summary>
-        /// Controllo prod.
+        /// Controllo Codice.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox prod;
+        protected global::System.Web.UI.WebControls.TextBox Codice;
         
         /// <summary>
-        /// Controllo descr.
+        /// Controllo Descrizione.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox descr;
+        protected global::System.Web.UI.WebControls.TextBox Descrizione;
     }
 }
