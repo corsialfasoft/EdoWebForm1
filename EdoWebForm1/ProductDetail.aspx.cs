@@ -38,7 +38,11 @@ namespace EdoWebForm1 {
         }
 
         protected void Annulla(object sender,EventArgs e) {
-            Response.Redirect($"~/SearchProduct");
+            //if (PreviousPage.Request["Descrizione"] != null) {
+            //    Response.Redirect($"~/ProductList.aspx?descrizione={PreviousPage.Request["Descrizione"]}");
+            //} else {
+                Response.Redirect($"~/SearchProduct");
+            //}
         }
     }
     public partial interface IDomainModel {
